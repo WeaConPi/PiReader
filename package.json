@@ -1,0 +1,13 @@
+{
+  "name": "bpm180v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "raspi-sensors": "^0.2.11",
+    "request": "^2.81.0"
+  }
+}
