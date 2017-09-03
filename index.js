@@ -17,15 +17,17 @@ BMP180.fetch(function (err, data) {
   // Log every hour
 });
 
-BMP180.fetchInterval(function (err, data) {
-  if (err) {
-    console.error("An error occured!");
-    console.error(err.cause);
-    return;
-  }
-  postDataWithDelay(data)
-  // Log every hour
-}, 3600);
+// Using CRONtab job instead
+
+// BMP180.fetchInterval(function (err, data) {
+//   if (err) {
+//     console.error("An error occured!");
+//     console.error(err.cause);
+//     return;
+//   }
+//   postDataWithDelay(data)
+//   // Log every hour
+// }, 3600);
 
 function postDataWithDelay(data) {
   console.log('Measurement happened')
